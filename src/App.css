@@ -14,10 +14,12 @@
 
 html {
   background: var(--bg-green);
+  width: 100%;
 }
 
-body{
+body {
   font-family: 'Montserrat';
+  width: 100%;
 }
 
 .App {
@@ -65,7 +67,7 @@ body{
 
 .crossed-line {
   text-decoration: line-through;
-  color: red
+  color: red;
 }
 
 .navbar {
@@ -75,36 +77,33 @@ body{
 }
 
 .hamburger-menu {
-  display:flex;
+  display: flex;
   flex-direction: row;
   align-items: flex-end;
-  float:right;
+  float: right;
   justify-content: center;
   background-color: var(--space-grey);
   color: #004643 !important;
   padding-right: 70px;
-  font-size:30px;
+  font-size: 30px;
   width: 300px;
-  margin-top:5px;
+  margin-top: 5px;
 }
 
 .button-container {
-  padding: 0 10px; 
+  padding: 0 10px;
 }
-
 
 .navbar-brand-link {
   color: var(--forum-seamoss) !important;
-  margin-left:18px;
+  margin-left: 18px;
   font-size: 50px !important;
 }
-
 
 .user-info {
   display: flex;
   align-items: center;
   font-size: 30px;
- 
 }
 
 .user-image-container {
@@ -121,7 +120,6 @@ body{
 }
 
 nav {
-
 }
 
 main {
@@ -130,7 +128,62 @@ main {
   width: 100%;
   color: var(--forum-seamoss);
   font-size: 30px;
- 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Montserrat';
+  font-size: 60px !important;
+  color: var(--forum-seamoss);
+  margin-top: 35px !important;
+}
+
+h2 {
+  font-family: 'Montserrat';
+  font-size: 50px !important;
+  color: var(--forum-seamoss);
+  margin-top: 35px !important;
+}
+
+.signUp {
+  background-color: var(--bg-green);
+  color: var(--forum-seamoss);
+  font-family: 'Montserrat';
+  font-size: 50px;
+}
+
+/* .login-one {
+  font-size: 30px !important;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  text-decoration: underline;
+  margin-bottom: 50px;
+  margin-right:30px;
+} */
+
+.login-two {
+  background-color: #f9bc60;
+  font-size: 40px !important;
+  color: #001e1d !important;
+  border-radius: 25px;
+  padding: 10px 25px;
+  box-shadow: 0px 5px 15px rgba(249, 188, 96, 0.4);
+  transition: all 0.3s ease;
+  width: 35%;
+  text-decoration: underline;
+}
+
+.login-two:hover {
+  background-color: #ffc981;
+  box-shadow: 0px 8px 20px rgba(249, 188, 96, 0.6);
+}
+
+.login-two:active {
+  background-color: #ecae3c;
+  box-shadow: 0px 2px 5px rgba(249, 188, 96, 0.8);
 }
 
 .navbar .hamburger {
@@ -142,12 +195,11 @@ main {
   .hamburger-menu {
     width: 100%;
     padding-right: 0;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
   }
 }
-
 
 @media (max-width: 500px) {
   .navbar .hamburger {
@@ -157,49 +209,54 @@ main {
   }
 }
 
-
-.quote{
-  width: 100%;
-  padding:5px;
+.quote {
+  /* width: 100%; */
+  padding: 5px;
   font-size: 30px !important;
 }
+
+.quote-text {
+  font-size: 30px !important;
+  /* width: 100% !important; */
+  padding: 5px;
+  font-family: 'Montserrat';
+  color: var(--forum-seamoss);
+  
+}
+
 
 ul.button-container {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 0;
   overflow: word-wrap;
   background-color: var(--bg-green);
-  width: 60%; 
 }
 
-
-.index-buttons{
-background-color: var(--btn-yellow) !important;
-color: black !important;;
-font-family: "montserrat";
-border-color: var(--btn-yellow) !important;
-border-radius: 0px !important;
-margin-bottom: 9px;
-width: 100% !important;
-word-wrap: break-word;
-font-size: 30px !important;
-}
-
-.index-form{
+.index-buttons {
+  background-color: var(--btn-yellow) !important;
+  color: black !important;
+  font-family: 'montserrat';
+  border-color: var(--btn-yellow) !important;
+  border-radius: 0px !important;
+  margin-bottom: 9px;
+  word-wrap: break-word;
   font-size: 30px !important;
 }
 
-.index-form input{
+.index-form {
+  font-size: 30px !important;
+}
+
+.index-form input {
   width: 60%;
   height: 50px;
   margin: 5px;
   border: 1px solid #ccc;
   border-radius: 5px 5px 5px 5px;
-
 }
 
 .index-form-button {
@@ -211,9 +268,82 @@ font-size: 30px !important;
   font-size: 30px;
   border: 1px solid black;
   border-radius: 5px 5px 5px 5px;
-  width: 60px; 
-  height: 60px; 
+  width: 60px;
+  height: 60px;
+}
 
+.date {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.feeling {
+  font-size: larger;
+  font-weight: bold;
+  color: black;
+  border: black 1px solid;
+  background-color: #f9bc60;
+}
+
+div .feeling {
+  text-decoration: none;
+}
+
+.react-calendar__tile {
+  height: 100px;
+  width: 100px;
+}
+.calendar-page {
+  height: 100vh;
+}
+
+.react-calendar {
+  align-items: center;
+  margin: 0 auto;
+  width: 700px;
+  max-width: 100%;
+  padding: 50px;
+  color: white;
+  background-color: #a2b5b5;
+  text-decoration: none;
+  border-radius: 4%;
+}
+
+.react-calendar__navigation > button {
+  background-color: #a2b5b5;
+  box-shadow: none;
+  border: 1px solid white;
+  color: #004643;
+}
+.react-calendar__year-view__months > button {
+  background-color: #a2b5b5;
+  box-shadow: none;
+  border: 1px solid white;
+  color: #004643;
+}
+.react-calendar__decade-view__years > button {
+  background-color: #a2b5b5;
+  box-shadow: none;
+  border: 1px solid white;
+  color: #004643;
+}
+.react-calendar__month-view__weekdays {
+  color: #004643;
+  text-decoration: underline;
+}
+.react-calendar__month-view__days > button {
+  background-color: #a2b5b5;
+  box-shadow: none;
+  border-radius: 5%;
+  height: 100px;
+  border: 1px solid white;
+}
+.emotion-btns {
+  height: 80px;
+}
+
+.btn-outline-light {
+  margin-right: 5px;
 }
 
 /* Responsive Header */
@@ -224,75 +354,102 @@ font-size: 30px !important;
   padding: 10px 15px; /* Adjust padding as needed */
 }
 
-
 /* Responsive Buttons */
 
 @media (min-width: 320px) {
   .index-buttons {
-    width: 100%; /* Set the width for screens with a minimum width of 320px */
+    width: 300px; /* Set the width for screens with a minimum width of 320px */
   }
 
   .user-info {
     font-size: 16px;
-    }
-    .user-image {
-      width: 55px;
-      height: 55px;
-      object-fit: cover; /* To maintain the aspect ratio of the image */
-      margin-right: 10px;
-    }
+  }
+  .user-image {
+    width: 55px;
+    height: 55px;
+    object-fit: cover; /* To maintain the aspect ratio of the image */
+    margin-right: 10px;
+  }
 
-    .navbar-brand-link {
-      color: var(--forum-seamoss) !important;
-      margin-left:18px;
-      font-size: 25px !important;
-    }
+  .navbar-brand-link {
+    color: var(--forum-seamoss) !important;
+    margin-left: 18px;
+    font-size: 25px !important;
+  }
+}
+
+.features-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.features-benefits li {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9bc60;
+  color: #001e1d;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.task-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: 420px) {
   .user-info {
-      font-size: 18px;
-      }
-      .user-image {
-        width: 55px;
-        height: 55px;
-        object-fit: cover; /* To maintain the aspect ratio of the image */
-        margin-right: 10px;
-      }
+    font-size: 18px;
+  }
+  .user-image {
+    width: 55px;
+    height: 55px;
+    object-fit: cover; /* To maintain the aspect ratio of the image */
+    margin-right: 10px;
+  }
 
-      .navbar-brand-link {
-        color: var(--forum-seamoss) !important;
-        margin-left:18px;
-        font-size: 25px !important;
-      }
-  
+  .navbar-brand-link {
+    color: var(--forum-seamoss) !important;
+    margin-left: 18px;
+    font-size: 25px !important;
+  }
+}
+
+.index-buttons {
+  width: 300px;
 }
 
 @media (min-width: 576px) {
   .index-buttons {
-    width: calc(50% - 20px); /* Subtract the horizontal padding */
-   
+    width: 500px;
   }
   .user-info {
-    font-size: 20px ;
-    }
-    .user-image {
-      width: 55px;
-      height: 55px;
-      object-fit: cover; /* To maintain the aspect ratio of the image */
-      margin-right: 10px;
-    }
+    font-size: 20px;
+  }
+  .user-image {
+    width: 55px;
+    height: 55px;
+    object-fit: cover; /* To maintain the aspect ratio of the image */
+    margin-right: 10px;
+  }
 
-    .navbar-brand-link {
-      color: var(--forum-seamoss) !important;
-      margin-left:18px;
-      font-size: 25px !important;
-    }
+  .navbar-brand-link {
+    color: var(--forum-seamoss) !important;
+    margin-left: 18px;
+    font-size: 25px !important;
+  }
 }
 
 @media (min-width: 768px) {
   .index-buttons {
-    width: calc(33.3333% - 20px); /* Subtract the horizontal padding */
+    width: 700px;
   }
 
   .user-image {
@@ -302,45 +459,135 @@ font-size: 30px !important;
     margin-right: 10px;
   }
 
-.user-info {
-    font-size: 20px ;
-    }
+  .user-info {
+    font-size: 20px;
+  }
 
-    .navbar-brand-link {
-      color: var(--forum-seamoss) !important;
-      margin-left:18px;
-      font-size: 30px !important;
-    }
+  .navbar-brand-link {
+    color: var(--forum-seamoss) !important;
+    margin-left: 18px;
+    font-size: 30px !important;
+  }
 }
 
 @media (min-width: 992px) {
   .index-buttons {
-    width: calc(25% - 20px); /* Subtract the horizontal padding */
+    width: 900px; 
   }
 
   .user-info {
-    font-size: 30px ;
-    }
-    .navbar-brand-link {
-      color: var(--forum-seamoss) !important;
-      margin-left:18px;
-      font-size: 40px !important;
-    }
+    font-size: 30px;
+  }
+  .navbar-brand-link {
+    color: var(--forum-seamoss) !important;
+    margin-left: 18px;
+    font-size: 40px !important;
+  }
 }
 
 @media (min-width: 1200px) {
   .index-buttons {
-    width: calc(20% - 20px); /* Subtract the horizontal padding */
+    width: 900px;
   }
 
   .user-info {
-    font-size: 30px ;
-    }
+    font-size: 30px;
+  }
 
-    .navbar-brand-link {
-      color: var(--forum-seamoss) !important;
-      margin-left:18px;
-      font-size: 50px !important;
-    }
+  .navbar-brand-link {
+    color: var(--forum-seamoss) !important;
+    margin-left: 18px;
+    font-size: 50px !important;
+  }
+}
 
+input::placeholder {
+  color: Black;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.index-form-button#category {
+  display: none;
+}
+
+/* Responsive table */
+
+/* CSS code for the ShowList component */
+
+/* Default styles for table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+ margin-bottom:50px !important;
+  padding-top: 20px; 
+  height:300px;
+}
+
+/* Default styles for table cells */
+td,
+th {
+  padding: 8px;
+  border: 1px solid #ddd;
+  /* Add other styles as needed */
+}
+
+/* Media queries for different viewport sizes */
+@media only screen and (min-width: 320px) {
+  /* Styles for viewports 320px and above */
+  td,
+  th {
+    font-size: 12px;
+    padding: 4px;
+    max-width: 80px;
+    word-wrap: break-word;
+    /* make a border that is only for top and below */
+    border-top:#001e1d 1px solid !important;
+    border-bottom:#001e1d 1px solid !important;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  /* Styles for viewports 480px and above */
+  td,
+  th {
+    font-size: 15px;
+    padding: 8px;
+    max-width: 150px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* Styles for viewports 768px and above */
+  td,
+  th {
+    font-size: 18px;
+    padding: 8px;
+    max-width: 300px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* Styles for viewports 992px and above */
+  td,
+  th {
+    font-size: 25px;
+    padding: 16px;
+    max-width: 400px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Styles for viewports 1200px and above */
+  td,
+  th {
+    font-size: 30px;
+    padding: 20px;
+  }
+}
+
+/* CSS for progress bar */
+.progressBar {
+  margin-bottom: 20px; /* Add margin to bottom of progress bar to avoid overlap with table */
 }
